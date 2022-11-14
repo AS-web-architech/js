@@ -1,0 +1,21 @@
+.text-center{
+   text-align: center;
+   margin: auto; 
+}
+.flex{
+  display: flex;
+} 
+
+.flex-col{
+ flex-direction: column;
+}
+.bg-yellow{
+  background-color: greenyellow;
+  color: black;
+  border-radius:20px ;
+}
+.bg-dark{
+  background-color: black;
+  color: white;
+  border-radius:20% ;
+}

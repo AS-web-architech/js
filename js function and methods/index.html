@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js assignments</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="utils.css">
+
+
+</head>
+
+<body>
+
+    <!-- programme for calculation -->
+    <h1 class="text-center">use me to calculate!</h1>
+    <div class="container flex flex-col">
+        <div class="row">
+            <input type="text">
+            <button id="butt" class="button">C</button>
+
+        </div>
+        <div class="row">
+            <button class="button bg-dark">7</button>
+            <button class="button bg-dark">8</button>
+            <button class="button bg-dark">9</button>
+            <button class="button bg-yellow">*</button>
+        </div>
+
+        <div class="row">
+            <button class="button bg-dark">4</button>
+            <button class="button bg-dark">5</button>
+            <button class="button bg-dark">6</button>
+            <button class="button bg-yellow">-</button>
+        </div>
+
+        <div class="row">
+            <button class="button bg-dark">1</button>
+            <button class="button bg-dark">2</button>
+            <button class="button bg-dark">3</button>
+            <button class="button bg-yellow">+</button>
+        </div>
+
+        <div class="row">
+            <button class="button bg-dark">0</button>
+            <button class="button bg-dark">.</button>
+            <button class="button bg-dark">/</button>
+            <button class="button bg-yellow">=</button>
+
+
+        </div>
+
+    </div><br><br><br><br><br>
+    <!-- 
+    Q9: Show a counter in browser. Counter should increase on click on increase
+    button and decrease on click on decrease button. And show updated counter
+    value in browse -->
+    <div class="text-center">
+        <h1>use me to count!</h1>
+    </div>
+    <div class="box">
+
+        <button type="button" id="increament" class="button">+</button>
+        <input type="text" value="0" id="count">
+        <button type="button" id="decreament" class="button">-</button>
+    </div>
+
+    <!--programme to Change the picture on mouseover and set the
+     first picture on mouseout -->
+
+
+    <div class="myimages">
+        <img src="img-1.png" alt="" id="image-1" onmouseover="setnewimage()" onmouseout="setoldimage()">
+
+    </div>
+
+
+    <!-- Q 10 :programme using js event  -->
+    <div class="mycontent">
+        <h1 class="text-center">reade me</h1>
+        <div class="mypara text-center">
+            <p id="para-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error fugit non quae commodi. Ad
+                nam laborum vero
+                quibusdam dolorem perspiciatis neque, nulla, voluptatum eveniet, nemo repudiandae iure consectetur amet
+                corrupti?
+            </p>
+            <p id="para-2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, minus! Non, ea! Quas
+                exercitationem qui illum velit nostrum ea harum inventore, tenetur vel id delectus quidem repellat
+                necessitatibus at eum!</p>
+            <button id="mybtn" onclick="toggleshow()">read more</button>
+        </div>
+
+    </div>
+
+   <!-- Q#7 STUDENT RECORDS -->
+
+<h1>Student records:</h1>
+<table >
+  <tr>
+    <th>s.no</th>
+    <th>student name</th>
+    <th>max marks</th>
+    <th>marks obt</th>
+
+  </tr>
+
+  <tr id="row1">
+    <td>1</td>
+    <td>Aiman</td>
+    <td>50</td>
+    <td>45</td>
+    <td><button onclick="togglehide1()">remove</button></td>
+    
+
+
+  </tr>
+  <tr id="row2">
+    <td>2</td>
+    <td>Areeba</td>
+    <td>50</td>
+    <td>45</td>
+    <td><button onclick="togglehide2()">remove</button></td>
+    
+
+  </tr>
+
+  <tr id="row3">
+    <td>3</td>
+    <td>Manahil</td>
+    <td>50</td>
+    <td>40</td>
+    <td><button onclick="togglehide3()">remove</button></td>
+    
+
+  </tr>
+  
+
+
+
+
+
+</table>
+  
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
