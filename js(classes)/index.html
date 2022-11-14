@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <div id="container">
+        <div id="big box">
+        <button class="btn" id="show"><span></span>show</button>
+        <button class="btn" id="hide"><span></span>hide</button>
+        <button class="btn" id="togle"><span></span>toggle</button></div>
+     <div id="div1">
+        <p>welcome to my world!</p><br>
+       <P>input field:<input type="text" id="txt" value="enter name"></P>
+            <button class="button" id="butt" >click to show name</button>
+        </div><br><br><br>
+    
+    <!-- </div><br><br><br> -->
+    <!-- my div tags -->
+    <div id="div2" style="background-color: yellow;"></div><br><br>
+
+    <button class="button" id="btn1">what color is the box?</button><br><br><br>
+    <div id="div3"  style="background-color: yellow;"></div>
+ 
+    <button class="button" id="btn2">what color is the box?</button>
+
+</center>
+
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#show").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+$("#hide").click(function(){
+      $("#div1").hide("5000s")
+  });
+  $("#togle").click(function(){
+      $("#div1").toggle("linear")
+  });
+  $("#butt").click(function(){
+     $("#txt").val("Areeba Shafi!");
+  });
+  $("#btn1").click(function(){
+    alert("Background color = " + $("#div2").css("background-color"));
+  });
+  $("#btn2").click(function(){
+    alert("Background color = " + $("#div3").css("background-color"));
+  });
+});
+</script>
+</html>
