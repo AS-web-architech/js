@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="showalert()">
+     <p style="color:red">inspect to see your user name</p>
+    <p>click the button below:</p>
+    <button type="button" onclick="message()">click me!</button>
+    <p>student info:</p>
+    <button type="button"  onclick="details()">click me!</button><br><br>
+    <button type="button"  onclick="order()">hello!</button><br><br>
+    <button type="button"  onclick="mail()">Address!</button><br><br>
+    <button type="button"  onclick="text()">Hi!</button><br><br>
+    <P>THIS IS MY MESSAGE USING JAVASCRIPT:</P>
+    <P id="mymessage"></P>
+    <script>
+        // Declare a variable called username
+       var username=prompt("enter your username")
+       console.log(username);
+    //    Declare a variable called myName & assign to it a string that represents your Full Name.
+    var myName="Areeba";
+    console.log(myName);
+    console.log(myName.substring)
+    // Write script to a) Declare a JS variable, titled message.
+    //  b) Assign “Hello World” to variable message c) Display the message in alert box.
+    
+    function message(){
+        let mymessage="hello world"
+        alert(mymessage)
+    }
+    // Write a script to save student’s bio data in JS variables and show the data in alert boxes.
+    
+    function details(name,age,diploma){
+        let student={
+        name:"john Doe",
+        age:"15 years old",
+        diploma:"certified mobile application development",
+    }
+    alert(student.name)
+    alert(student.age)
+    alert(student.diploma)
+    }
+    
+    // Write a script to display the following alert using one JS variable: 
+  function  order(){
+    let x=["pi","piz","pizz","pizza","pizzaaa"];
+    alert(x)
+    
+  }
+  // Declare a variable called email and assign to it a string that represents your 
+  // Email Address(e.g. example@example.com). Show the blow mentioned message in an alert box.
+  // (Hint: use string concatenation)
+
+    function mail(){
+      let Email="areebaShafi@gmail.com"
+      alert(`my email adress is ${Email}`)
+    } 
+    
+    // Declare a variable called book & give it the value “A smarter way to learn JavaScript”. 
+    // Display the following message in an alert box:
+  function text(){
+    let book="A smarter way to learn JavaScript"
+    alert(`I am trying to learning from the Book ${book}`)
+  }
+    
+  // Write a script to display this in browser through JS 
+    let para=document.getElementById("mymessage");
+    para.innerHTML="yah!I can write HTML content through javascript"
+
+
+    // Store following string in a variable and 
+    // show in alert and browser through JS “▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬
+
+      function showalert(){
+        alert("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬")
+      } 
+
+
+
+
+
+
+    </script>
+</body>
+</html>
