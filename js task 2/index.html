@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripttasks.com</title>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <!-- //Q1: -->
+    <p>Hello there! want to know my age ?</p>
+    <button type="button" onclick="myage()">age=?</button><br><br>
+    
+    <!-- Q2: -->
+    <label for="Bdate">write your birth year:</label>
+    <input type="number" id="Bdate"><br><br>
+    <button type="submit" onclick="callvalue()" >print:</button>
+    <p id="year"></p>
+
+
+
+    <script>
+    //Q1: Declare a variable called age & assign to it your age. Show your age in an alert box.
+    function myage(){
+        let age="20 years"
+        alert(`i am ${age}  old`)
+    }
+
+
+    // Q2:Declare a variable called birthYear & assign to it your birth year.
+    //  Show the following message in your browser: 
+      function callvalue(){
+       var birthYear=document.getElementById("Bdate").value;
+       let text=document.getElementById("year");
+       year.innerHTML=(`my birth year is ${birthYear}
+         data type of my declared variable is ${typeof birthYear} `);
+     
+
+      }
+    
+
+    
+    
+
+    </script>
+     
+</body>
+</html>
